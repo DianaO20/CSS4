@@ -1,0 +1,197 @@
+@mixin large{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+@mixin medium{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+@mixin small{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@mixin largeTitle{
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+@mixin mediumTitle{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 500;
+}
+@mixin smallTitle{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@mixin desktop{
+    @media(min-width: 1024px){
+        @content;
+    }
+   
+}
+@mixin tablet{
+    @media (max-width:1023px){
+        @content;
+    }
+   
+}
+@mixin phone{
+    @media(max-width: 779px){
+        @content;
+    }
+   
+}
+
+
+.p1 {
+    @include desktop{
+        @include large;
+        color: rgb(90, 158, 247);
+    }
+    @include tablet{
+        @include medium;
+    }
+    @include phone{
+        @include small;
+        color: rgb(61, 64, 233);
+    }
+}
+
+
+.h1 {
+
+@include desktop{
+    @include largeTitle;
+}
+@include tablet{
+    @include mediumTitle;
+}
+@include phone{
+    @include smallTitle;
+    color: rgb(61, 64, 233);
+}
+}
+
+.p2 {
+    @include desktop{
+        @include large;
+        color: rgb(124, 126, 240);
+    }
+    @include tablet{
+        @include medium;
+        color: rgb(61, 64, 233);
+    }
+    @include phone{
+        @include small;
+        color: rgb(61, 64, 233);
+    }
+}
+
+
+.h2 {
+
+@include desktop{
+    @include largeTitle;
+    color: rgb(245, 169, 156);
+}
+@include tablet{
+    @include mediumTitle;
+}
+@include phone{
+    @include smallTitle;
+}
+}
+.p3 {
+    @include desktop{
+        @include large;
+        color: rgb(211, 14, 14);
+    }
+    @include tablet{
+        @include medium;
+    }
+    @include phone{
+        @include small;
+    }
+}
+
+
+.h3 {
+
+@include desktop{
+    @include largeTitle;
+    color: rgb(243, 47, 12);
+}
+@include tablet{
+    @include mediumTitle;
+}
+@include phone{
+    @include smallTitle;
+}
+}
+.p4 {
+    @include desktop{
+        @include large;
+        color: rgb(245, 156, 218);
+    }
+    @include tablet{
+        @include medium;
+        color: rgb(245, 232, 156);
+    }
+    @include phone{
+        @include small;
+        color: rgb(245, 169, 156);
+        
+    }
+}
+
+
+.h4 {
+
+@include desktop{
+    @include largeTitle;
+    color: rgb(245, 156, 218);
+}
+@include tablet{
+    @include mediumTitle;
+}
+@include phone{
+    @include smallTitle;
+}
+}
+.p5 {
+    @include desktop{
+        @include large;
+        color: rgb(231, 108, 194);
+    }
+    @include tablet{
+        @include medium;
+    }
+    @include phone{
+        @include small;
+    }
+}
+
+
+.h5 {
+
+@include desktop{
+    color: rgb(231, 108, 194);
+    @include largeTitle;
+    
+}
+@include tablet{
+    @include mediumTitle;
+}
+@include phone{
+    @include smallTitle;
+}
+}

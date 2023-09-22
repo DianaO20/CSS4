@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+.first {
+  border: 1px solid rgb(175, 152, 236);
+  color: blue;
+  width: 200 px;
+  height: 100 px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.second {
+  border: 1px solid rgb(175, 152, 236);
+  color: green;
+  width: 150;
+  height: 100;
+}/*# sourceMappingURL=index1.css.map */

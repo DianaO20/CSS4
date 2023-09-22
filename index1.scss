@@ -1,0 +1,22 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@mixin text($w: 200 px, $h: 100 px, $c: blue){
+    border: 1px solid rgb(175, 152, 236);
+    color: $c;
+    width: $w;
+    height: $h;
+
+    
+    
+}
+
+.first{
+    @include text;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.second{
+    @include text(150,100 ,green )
+    
+}
